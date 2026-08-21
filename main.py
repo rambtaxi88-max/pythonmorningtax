@@ -1,16 +1,20 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.database import Base, engine
+
+
+from database import Base, engine
+import models
+from routers import users
+from routers import upload
+from routers import dependency
 
 # IMPORTANT:
 # This imports User, UserFile and Dependency
 # so SQLAlchemy registers them in Base.metadata.
-import app.models
 
-from app.routers import users
-from app.routers import upload
-from app.routers import dependency
+
+
 
 
 # Create all SQLAlchemy tables
