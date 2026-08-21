@@ -8,7 +8,7 @@ from sqlalchemy.orm import Session
 
 from database import get_db
 from models import User, Dependency
-from app.schemas import (
+from schemas import (
     DependencyCreate,
     DependencyResponse
 )
