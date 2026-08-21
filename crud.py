@@ -1,7 +1,6 @@
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
-
-from app.models import User
+from models import User
 
 
 pwd_context = CryptContext(
