@@ -7,7 +7,7 @@ from passlib.context import CryptContext
 import crud
 import models
 import schemas
-from app.database import get_db
+from database import get_db
 
 
 router = APIRouter(
