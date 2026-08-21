@@ -6,8 +6,8 @@ from fastapi import (
 
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.models import User, Dependency
+from database import get_db
+from models import User, Dependency
 from app.schemas import (
     DependencyCreate,
     DependencyResponse
