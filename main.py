@@ -24,6 +24,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="MorningTax API",
     version="1.0.0"
+      root_path="/api"
 )
 
 app.add_middleware(
