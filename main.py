@@ -32,7 +32,14 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:4200",
         "http://127.0.0.1:4200",
-        "http://187.52.119.33:8000"
+        "http://187.52.119.33:8000",
+        "http://187.52.119.33",
+        "https://morningtax.in",
+        "https://www.morningtax.in",
+         "https://www.morningtax.com",
+            "https://morningtax.com",
+             "http://www.morningtax.com",
+            "http://morningtax.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
