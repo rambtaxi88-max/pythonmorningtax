@@ -10,6 +10,9 @@ app = FastAPI(
     title="MorningTax API",
     version="1.0.0",
     root_path="/api",
+    servers=[
+        {"url": "/api"}
+    ],
 )
 app.add_middleware(
     CORSMiddleware,
